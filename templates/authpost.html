@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Post</title>
+</head>
+
+<style>
+  /* style of navbar */
+  
+  * {
+  
+     margin-top: 5px;
+  
+  }
+  
+  li {
+     list-style-type: none;
+     display: inline;
+     padding: 20px;
+     font-size: 20px;
+     margin-left: -25px;
+  }
+  
+  li a {
+     text-decoration: none;
+     color: white;
+  }
+  
+  a:link {
+     padding: 15px;
+     margin-top: 10px;
+    
+  }
+  
+  ul {
+     margin-left: 2px;
+     margin-top: 4px;
+     width: 97%;
+  }
+  
+  div.navbar {
+     height: 65px;
+     background-color: rgba(47, 47, 151, 0.1);
+  
+  }
+  
+  a:hover {
+     background-color: rgb(255, 247, 247);
+     color: rgb(59, 89, 53);
+     border-radius: 15px;
+  
+  }
+  
+  .icon{
+    
+     
+     color: rgb(5, 5, 5);
+    
+     text-decoration: none;
+     font-size: 20px;
+     padding-right: 35px;
+     padding-left: 35px;
+     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  
+  }
+  .icon:hover{
+     color:  rgb(118, 152, 154);
+     background-color:rgb(249, 249, 249) ;
+     border-radius: 15px;
+  
+  }
+  </style>
+<style>
+  .box {
+    margin-top: 90px;
+    max-width: 80%;
+    padding: 30px;
+    background-image: linear-gradient( to bottom right,rgba(84, 132, 152, 0.8) ,rgba(194, 212, 149, 0.8)),url(../static/viewaddpostpage.jpg);  
+    color: white;
+    border-color: black;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: 200px;
+   
+    
+
+
+  }
+
+  table {
+    width: 90%;
+    animation-name: boxslider;
+   
+    animation-duration: 2s;
+ 
+  }
+
+  tr {
+    font-size: 20px;
+  }
+
+ 
+ 
+  body{
+    background-image: linear-gradient( to bottom right,rgb(69, 189, 69,0.8) ,rgb(42, 42, 118,0.8)),url(../static/viewaddpostpage.jpg);  
+        /* clip-path: polygon(0 0, 100% 0,100% 550px,0 100%); */
+        background-repeat: repeat;
+        background-size: 100%;
+        color: rgb(6, 6, 6);
+  }
+
+    .btn:visited,.btn:link{
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 10px 20px;
+        display: inline-block;
+        font-size: 15px;
+        animation-name: btnup;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+    }
+    .btn:hover{
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0,0,0.5);
+        cursor: pointer;
+      
+       
+    }
+    .btn:active{
+        transform: translateY(-1px);
+        box-shadow: 0 10px 20px rgba(0, 0,0,0.5);
+    }
+
+    .btn-white{
+        margin-left: 0px;
+        margin-top: 40px;
+         background-color: aliceblue;
+         color: black;
+         border-radius: 50px;
+    }
+
+    @keyframes btnup{
+        0%{
+            opacity:0;
+            transform: translateY(50px);
+            
+        }
+
+        80%{
+            
+        }
+        100%{
+            opacity: 1;
+            transform: translate(0);
+        }
+    }
+    .btn-animated{
+        animation: btnup .5s ease-out .25s;
+        animation-fill-mode: backwards;
+        
+    }
+  
+    @keyframes boxslider{
+        0%{
+            opacity:0;
+            transform: translateX(100px);
+           
+            
+        }
+
+        80%{
+            transform: translateX(0px);
+           
+        }
+        100%{
+            opacity: 1;
+            transform: translate(0);
+        }
+    }
+
+    
+    .text-bx{
+  
+    top: 50px;
+    left: 4%;
+   
+    }
+    pre{
+     
+      color: black;
+
+    }
+    a{
+      color: white;
+      font-size: 25px;
+    }
+    
+    .heading-primary-main{
+        display: block;
+       
+        padding-top: 15px;
+        font-size: 40px;
+        font-weight: 700;
+        letter-spacing: 15px;
+        color: white;
+        animation-name: moveInLeft;
+        animation-duration: 3s;
+        animation-timing-function: ease-out;
+        animation-delay: 1s;
+        animation-fill-mode: backwards;
+        margin-left: 170px;
+        /*
+        animation-delay:3s;
+        animation-iteration-count:3;
+        */
+    }
+    @keyframes moveInLeft{
+        0%{
+            opacity:0;
+            transform: translateX(-50px);
+            
+        }
+
+        80%{
+            transform: translateX(0px);
+           
+        }
+        100%{
+            opacity: 1;
+            transform: translate(0);
+        }
+    }
+
+
+</style>
+
+<body>
+  
+ 
+    <header class="header">
+      
+      
+      <div class="navbar">
+        <ul><br>
+            <li><a href="/" class="icon  ">Blogger</a></li>
+            <li><a class="home" href="/authpost">Home</a></li>
+            
+            <li><a  href="/addpost">AddBlog</a></li>
+            <li><a  href="/authorpg">AuthorPage</a></li>
+        
+        </ul>
+ 
+    </div>
+        <div class="text-bx">
+ 
+          <h1 class="heading-primary-main">Welcome To All Auth Page</h1>
+  {% for i in elist %}
+  <table class="box">
+    <tr>
+      <td>
+        <pre>Username :  <a>{{i[0]}} </a> </pre></td>
+    </tr>
+
+    <tr>
+      <td>
+        <pre>Blogtitle:  <a>{{i[1]}}</a>  </pre></td>
+    </tr>
+    <tr>
+      <td>
+        <pre>Blog: <a>{{i[2]}}</a> </pre></td>
+    </tr>
+
+    <td><a class="btn btn-white btn-animated" href="/del?username={{i[0]}}">Delete</a>
+    <a class="btn btn-white btn-animated" href="/edit?username={{i[0]}}">Edit</a></td>
+  </table>
+
+
+
+
+  {% endfor %}
+  
+</div>
+</header>
+</body>
+
+</html>

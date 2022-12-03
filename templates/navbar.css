@@ -1,0 +1,64 @@
+
+/* style of navbar */
+
+* {
+
+   margin-top: 5px;
+
+}
+
+li {
+   list-style-type: none;
+   display: inline;
+   padding: 20px;
+   font-size: 20px;
+   margin-left: -25px;
+}
+
+li a {
+   text-decoration: none;
+}
+
+a:link {
+   padding: 15px;
+   color: white;
+   margin-top: 10px;
+}
+
+ul {
+   margin-left: 2px;
+   margin-top: 4px;
+   width: 97%;
+}
+
+div.navbar {
+   height: 65px;
+   background-color: rgba(47, 47, 151, 0.1);
+
+}
+
+a:hover {
+   background-color: rgb(249, 244, 244);
+   color: rgb(29, 77, 27);
+   border-radius: 15px;
+
+}
+
+.icon{
+  
+   
+   color: rgb(5, 5, 5);
+  
+   text-decoration: none;
+   font-size: 20px;
+   padding-right: 35px;
+   padding-left: 35px;
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.icon:hover{
+   color:  rgb(118, 152, 154);
+   background-color:rgb(249, 249, 249) ;
+   border-radius: 15px;
+
+}

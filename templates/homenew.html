@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body{
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.7;
+        color: rgba(80, 81, 82, 0.925);
+        padding: 30px;
+
+    }
+    .header{
+        height: 95vh;
+        background-image: linear-gradient( to bottom right,rgb(69, 189, 69,0.8) ,rgb(42, 42, 118,0.8)),url(../static/home.jpeg);
+        background-size: cover;
+        clip-path: polygon(0 0, 100% 0,100% 550px,0 100%);
+    }
+
+    .heading-primary{
+        color: aliceblue;
+        text-transform: uppercase;
+
+        backface-visibility: hidden;
+
+    }
+    .heading-primary-main{
+        display: block;
+        width: 900px;
+        font-size: 40px;
+        font-weight: 700;
+        letter-spacing: 25px;
+
+        animation-name: moveInLeft;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+        animation-delay: .25s;
+        animation-fill-mode: backwards;
+
+        /*
+        animation-delay:3s;
+        animation-iteration-count:3;
+        */
+    }
+    .heading-primary-sub{
+        margin-left: 150px;
+         display: block;
+         font-size: 20px;
+         font-weight: 700px;
+         letter-spacing: 15px;
+         animation: moveInRight 1s ease-out .25s;
+         animation-fill-mode: backwards;
+    }
+    .text-bx{
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    transform: translate(-50%,-50%);
+    }
+
+    @keyframes moveInLeft{
+        0%{
+            opacity:0;
+            transform: translateX(-100px);
+            
+        }
+
+        80%{
+            transform: translateX(0px);
+           
+        }
+        100%{
+            opacity: 1;
+            transform: translate(0);
+        }
+    }
+
+    @keyframes moveInRight{
+        0%{
+            opacity:0;
+            transform: translateX(100px);
+            
+        }
+
+        80%{
+            
+        }
+        100%{
+            opacity: 1;
+            transform: translate(0);
+        }
+
+
+        
+    }
+    .btn:visited,.btn:link{
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 12px 30px;
+        display: inline-block;
+        font-size: 30px;
+        animation-name: btnup;
+        animation-duration: 2s;
+        animation-timing-function: ease-out;
+    }
+    .btn:hover{
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0,0,0.5);
+        cursor: pointer;
+      
+       
+    }
+    
+    .btn:active{
+        transform: translateY(-1px);
+        box-shadow: 0 10px 20px rgba(0, 0,0,0.5);
+    }
+
+    .btn-white{
+        margin-left: 120px;
+        margin-top: 40px;
+         background-color: aliceblue;
+         color: black;
+         border-radius: 50px;
+    }
+
+    @keyframes btnup{
+        0%{
+            opacity:0;
+            transform: translateY(50px);
+            
+        }
+
+        80%{
+            
+        }
+        100%{
+            opacity: 1;
+            transform: translate(0);
+        }
+    }
+    .btn-animated{
+        animation: btnup .5s ease-out .25s;
+        animation-fill-mode: backwards;
+        
+    }
+</style>
+<body>
+    
+
+    
+    <header class="header">
+
+        <div class="text-bx">
+
+       
+<h1 class="heading-primary">
+    <span class="heading-primary-main">Want To Create Your Own Blog? </span>
+    <span class="heading-primary-sub">       Create Now... </span>
+    <a href="/signup" class="btn btn-white btn-animated">discovers the blogs</a>
+</h1>
+</div> 
+    </header>
+</body>
+</html>
